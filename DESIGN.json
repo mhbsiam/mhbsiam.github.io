@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-06T20:00:00.000Z",
+  "title": "Design System: mhbsiam.github.io",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "ink", "canonical": "oklch(16% 0.022 262)" },
+      "ink-2": { "role": "neutral", "displayName": "ink-2", "canonical": "oklch(19.5% 0.022 262)" },
+      "ink-3": { "role": "neutral", "displayName": "ink-3", "canonical": "oklch(26% 0.02 262)" },
+      "ink-4": { "role": "neutral", "displayName": "ink-4", "canonical": "oklch(36% 0.018 262)" },
+      "chalk": { "role": "neutral", "displayName": "chalk", "canonical": "oklch(94% 0.012 90)" },
+      "chalk-2": { "role": "neutral", "displayName": "chalk-2", "canonical": "oklch(77% 0.014 85)" },
+      "chalk-3": { "role": "neutral", "displayName": "chalk-3", "canonical": "oklch(64% 0.014 85)" },
+      "accent": { "role": "primary", "displayName": "chartreuse", "canonical": "oklch(87% 0.19 118)" },
+      "accent-dim": { "role": "primary", "displayName": "chartreuse dim", "canonical": "oklch(72% 0.15 118)" },
+      "plate": { "role": "neutral", "displayName": "plate", "canonical": "oklch(93% 0.014 90)" },
+      "plate-2": { "role": "neutral", "displayName": "plate-2", "canonical": "oklch(89% 0.016 90)" },
+      "plate-ink": { "role": "neutral", "displayName": "plate ink", "canonical": "oklch(18% 0.02 262)" },
+      "plate-ink-2": { "role": "neutral", "displayName": "plate ink 2", "canonical": "oklch(42% 0.018 262)" },
+      "plate-rule": { "role": "neutral", "displayName": "plate rule", "canonical": "oklch(80% 0.014 90)" },
+      "plate-accent": { "role": "primary", "displayName": "olive", "canonical": "oklch(42% 0.13 122)" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero statement and 404 headline. Bricolage Grotesque, condensed." },
+      "headline": { "displayName": "Headline", "purpose": "Plate titles." },
+      "body": { "displayName": "Body", "purpose": "Prose and publication titles. Newsreader." },
+      "label": { "displayName": "Label", "purpose": "Plate numbers, kickers, captions, dates, nav." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "reveal", "value": "900ms cubic-bezier(0.16, 1, 0.3, 1), 90ms stagger", "purpose": "Hero page-load reveal only." },
+      { "name": "state", "value": "160ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hover and colour transitions." },
+      { "name": "nav-underline", "value": "320ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Scrollspy underline." }
+    ],
+    "breakpoints": [
+      { "name": "hero-side-by-side", "value": "64em" },
+      { "name": "two-column-lists", "value": "48em" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Primary action. Chartreuse fill, ink text, 2px radius.",
+      "html": "<a class=\"btn btn--solid\" href=\"#\">Get in touch</a>",
+      "css": ".btn{display:inline-flex;align-items:center;min-height:46px;padding:.6rem 1.25rem;border:1px solid transparent;border-radius:2px;font:600 .86rem/1 \"Bricolage Grotesque\",sans-serif;letter-spacing:.04em;text-decoration:none}.btn--solid{background:var(--accent);color:var(--ink);border-color:var(--accent)}.btn--solid:hover{background:var(--chalk);border-color:var(--chalk)}"
+    },
+    {
+      "name": "Ghost button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action. Hairline border on ink.",
+      "html": "<a class=\"btn btn--ghost\" href=\"#\">Read the CV</a>",
+      "css": ".btn--ghost{color:var(--chalk);border-color:var(--ink-4)}.btn--ghost:hover{border-color:var(--chalk-2);background:var(--ink-2)}"
+    },
+    {
+      "name": "Plate number",
+      "kind": "label",
+      "refersTo": "plate-num",
+      "description": "Section numbering, stacked above the plate title.",
+      "html": "<span class=\"plate__num\"><b>Plate II</b> About</span>",
+      "css": ".plate__num{display:block;font:600 .72rem \"Bricolage Grotesque\",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--chalk-3)}.plate__num b{color:var(--accent);margin-right:.6em}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ink Plate",
+    "overview": "A dark atlas plate: blue-black ground, chalk type, hairline rules, and one chartreuse mark that always points at the thing that matters. Sections are numbered plates; the CAFE band is the positive print.",
+    "keyCharacteristics": [
+      "Dark ground, tinted neutrals, no pure black or white",
+      "One chartreuse mark; olive stand-in on the light band",
+      "Condensed grotesk display with a serif for prose",
+      "Hairline-ruled ledgers and reference lists, no cards",
+      "One inverted band, one live WebGL figure, one page-load reveal"
+    ],
+    "rules": [
+      { "name": "The One Mark Rule", "body": "Chartreuse is the only chromatic colour on ink. On the plate band the olive plate-accent stands in.", "section": "colors" },
+      { "name": "The One Print Rule", "body": "Exactly one inverted band per page: the CAFE feature.", "section": "colors" }
+    ],
+    "dos": [
+      "Separate with hairlines, not boxes",
+      "End plate titles with a period",
+      "Link publication titles only when a DOI exists"
+    ],
+    "donts": [
+      "No second accent, gradients, glows or glass",
+      "No cards, pills or icon-above-heading grids",
+      "No invented DOIs, dates or metrics"
+    ]
+  }
+}

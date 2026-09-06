@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Hasanul Banna Siam</title>
+<meta name="description" content="Md Hasanul Banna Siam is a PhD candidate in the Tyrrell Lab at UAB, studying CD8+ T cells in aging and atherosclerosis and building open-source tools for high-dimensional immunology.">
+<link rel="canonical" href="https://mhbsiam.github.io/">
+<meta name="theme-color" content="#14161d">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Md Hasanul Banna Siam">
+<meta property="og:description" content="PhD candidate at UAB studying CD8+ T cells in aging and atherosclerosis, and building CAFE, an open-source tool for spectral flow cytometry.">
+<meta property="og:url" content="https://mhbsiam.github.io/">
+<meta property="og:image" content="https://mhbsiam.github.io/assets/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-italic-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2314161d'/><circle cx='20' cy='12' r='5' fill='%23dcf26a'/><circle cx='9' cy='20' r='3' fill='%23555a66'/><circle cx='22' cy='24' r='2.5' fill='%23555a66'/><circle cx='12' cy='9' r='2' fill='%23555a66'/></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap top__inner">
+    <a class="mark" href="#top"><span class="mark__short">Siam</span><span class="mark__long">Md Hasanul Banna Siam</span></a>
+    <nav aria-label="Site">
+      <ul class="top__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#cafe">CAFE</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#record">Record</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__text">
+      <p class="kicker reveal" style="--i:0">Plate I &middot; Immunology &middot; Aging &middot; Bioinformatics</p>
+      <h1 class="hero__title reveal" id="hero-title" style="--i:1">
+        Aging T cells end up in arteries.
+        <em>I want to know why.</em>
+      </h1>
+      <p class="hero__lede reveal" style="--i:2">
+        I am a PhD candidate in Dr. Daniel Tyrrell's lab at the UAB Heersink School of
+        Medicine, studying CD8+ T cells in the context of aging and cardiovascular
+        disease. I also build open-source tools that make high-dimensional cytometry
+        something a bench immunologist can drive alone.
+      </p>
+      <div class="actions reveal" style="--i:3">
+        <a class="btn btn--solid" href="mailto:msiam@uab.edu">Get in touch</a>
+        <a class="btn btn--ghost" href="cv.html">Read the CV</a>
+      </div>
+    </div>
+
+    <figure class="hero__fig">
+      <div class="hero__plate" data-umap role="img"
+           aria-label="Simulated UMAP embedding of flow cytometry data. One population, the age-associated T cells, is marked in chartreuse; the other islands are neighbouring clusters drawn in grey.">
+        <canvas data-umap-canvas aria-hidden="true"></canvas>
+        <svg class="hero__leader" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="60" y1="12.5" x2="64" y2="36" vector-effect="non-scaling-stroke" />
+          <circle cx="64" cy="36" r="0.8" vector-effect="non-scaling-stroke" />
+        </svg>
+        <p class="hero__label" aria-hidden="true">Age-associated T cells</p>
+      </div>
+      <figcaption class="hero__caption"><b>Fig. 1</b> Simulated UMAP of a spectral flow panel. Generated points, not patient data; the marked island stands in for the cells this thesis is about.</figcaption>
+    </figure>
+  </section>
+
+  <section class="plate" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <header class="plate__head">
+        <span class="plate__num"><b>Plate II</b> About</span>
+        <h2 class="plate__title" id="about-title">A budding researcher, trained first on outbreaks, now on arteries.</h2>
+      </header>
+      <div class="grid about">
+        <figure class="about__portrait">
+          <img src="assets/siam-headshot.jpg"
+               srcset="assets/siam-headshot-240.jpg 240w, assets/siam-headshot.jpg 600w"
+               sizes="(max-width: 48em) 80vw, 22rem"
+               width="600" height="750" decoding="async" loading="lazy"
+               alt="Portrait of Md Hasanul Banna Siam">
+          <figcaption>Tyrrell Lab, UAB Heersink School of Medicine</figcaption>
+        </figure>
+        <div class="about__body">
+          <p>
+            Hi, I am Siam. I study CD8+ T cells: the cytotoxic soldiers of the immune
+            system. They are supposed to be disciplined. They recognise something, they
+            act, and then most of them die off. As we age, a subset stops following that
+            script: it accumulates, holds onto an activated state, and turns up in tissue
+            where it has no obvious business being, including the fatty lesions that form
+            inside arteries.
+          </p>
+          <p>
+            My thesis asks what those cells are doing there. Which states do they occupy,
+            how do they arrive, and does their presence make atherosclerosis worse, or is
+            it incidental to it? I work in mouse models and read the immune system out by
+            spectral flow cytometry and single-cell RNA sequencing.
+          </p>
+          <p>
+            I trained as a microbiologist at the University of Dhaka and worked at the
+            Biomedical Research Foundation, icddr,b and BRAC University before starting
+            graduate school in the US. That work was epidemiological: field data collection
+            during the 2017 chikungunya outbreak in Dhaka, and a run of studies on how
+            COVID-19 moved through Bangladesh.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>PhD candidate, Biomedical Science</dd></div>
+          <div><dt>Lab</dt><dd>Tyrrell Lab, UAB Pathology</dd></div>
+          <div><dt>Focus</dt><dd>CD8+ T cells, aging, atherosclerosis</dd></div>
+          <div><dt>Methods</dt><dd>Spectral flow cytometry, single-cell RNA-seq</dd></div>
+          <div><dt>Based in</dt><dd>Birmingham, Alabama</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="plate" id="news" aria-labelledby="news-title">
+    <div class="wrap">
+      <header class="plate__head">
+        <span class="plate__num"><b>Plate III</b> News</span>
+        <h2 class="plate__title" id="news-title">Recently.</h2>
+      </header>
+      <ol class="ledger">
+        <li class="ledger__row">
+          <span class="ledger__year">2026</span>
+          <div>
+            <p class="ledger__title">Awarded an American Heart Association Predoctoral Fellowship</p>
+            <p class="ledger__desc">Announced by the UAB Department of Pathology.</p>
+            <a class="ledger__link" href="https://www.uab.edu/medicine/news/pathology/two-uab-pathology-trainees-receive-2026-american-heart-association-predoctoral-fellowships">UAB Pathology</a>
+          </div>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__year">2025</span>
+          <div>
+            <p class="ledger__title">CAFE published in <i>Bioinformatics</i></p>
+            <p class="ledger__desc">First-author paper describing the web app for high-dimensional spectral flow cytometry analysis.</p>
+            <a class="ledger__link" href="https://doi.org/10.1093/bioinformatics/btaf176">Read the paper</a>
+          </div>
+        </li>
+        <li class="ledger__row ledger__row--dup">
+          <span class="ledger__year"><span class="visually-hidden">2025</span></span>
+          <div>
+            <p class="ledger__title">Presented at the AAI Annual Meeting</p>
+            <p class="ledger__desc">Honolulu, Hawaii.</p>
+          </div>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__year">2024</span>
+          <div>
+            <p class="ledger__title">Spectral flow cytometry analysis pipeline published in <i>The Journal of Immunology</i></p>
+            <p class="ledger__desc">High-dimensional immune cell characterization pipeline.</p>
+            <a class="ledger__link" href="https://doi.org/10.4049/jimmunol.2400370">Read the paper</a>
+          </div>
+        </li>
+        <li class="ledger__row ledger__row--dup">
+          <span class="ledger__year"><span class="visually-hidden">2024</span></span>
+          <div>
+            <p class="ledger__title">Joined the UAB Immunology Institute</p>
+            <p class="ledger__desc">An interdisciplinary hub advancing the study of immunology and human health.</p>
+          </div>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__year">2023</span>
+          <div>
+            <p class="ledger__title">Joined the Tyrrell Lab as an AMC21 Scholar</p>
+            <p class="ledger__desc">UAB Heersink School of Medicine, Birmingham.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="plate" id="research" aria-labelledby="research-title">
+    <div class="wrap">
+      <header class="plate__head">
+        <span class="plate__num"><b>Plate IV</b> Research</span>
+        <h2 class="plate__title" id="research-title">From thirty markers per cell to a named population.</h2>
+      </header>
+      <ol class="quad">
+        <li class="quad__item">
+          <span class="quad__num" aria-hidden="true">I</span>
+          <h3>Aging CD8+ T cells</h3>
+          <p>
+            As an animal ages, cytotoxic CD8+ T cells accumulate and hold onto an
+            activated state. I characterise these age-associated populations and the
+            Granzyme K subset that grows more common with age.
+          </p>
+        </li>
+        <li class="quad__item">
+          <span class="quad__num" aria-hidden="true">II</span>
+          <h3>T cells in atherosclerosis</h3>
+          <p>
+            Age-associated T cells turn up inside atherosclerotic plaques. My thesis asks
+            which states they occupy, how they arrive, and whether their presence drives
+            the disease or simply travels with it.
+          </p>
+        </li>
+        <li class="quad__item">
+          <span class="quad__num" aria-hidden="true">III</span>
+          <h3>High-dimensional cytometry</h3>
+          <p>
+            A spectral panel reads thirty-plus markers on every cell that passes the
+            laser. I design panels and analysis pipelines that keep that information
+            readable instead of collapsing it.
+          </p>
+        </li>
+        <li class="quad__item">
+          <span class="quad__num" aria-hidden="true">IV</span>
+          <h3>Computational immunology</h3>
+          <p>
+            My master's thesis in Dhaka was the first time I had to build an analysis
+            rather than run one. That habit became CAFE, an open-source web app for
+            spectral flow cytometry.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="plate print" id="cafe" aria-labelledby="cafe-title">
+    <div class="wrap">
+      <span class="plate__num"><b>Plate V</b> Software</span>
+      <h2 class="print__word" id="cafe-title">CAFE</h2>
+      <p class="print__expand">Cell Analyzer for Flow Experiment. Cytometry analysis, no code required.</p>
+      <div class="grid print__grid">
+        <div class="print__copy">
+          <p>
+            CAFE is an open-source web app that runs the whole pipeline on a spectral
+            flow cytometry dataset: dimensionality reduction, clustering, differential
+            abundance testing, and publication-ready figures. Most labs assemble that
+            sequence by hand, in a different script every time. CAFE puts it behind an
+            interface a bench immunologist can drive alone. Python, Streamlit and Scanpy,
+            MIT licensed.
+          </p>
+          <div class="actions">
+            <a class="btn btn--solid" href="https://doi.org/10.1093/bioinformatics/btaf176">Read the paper</a>
+            <a class="btn btn--ghost" href="https://github.com/mhbsiam/cafe">Source on GitHub</a>
+          </div>
+        </div>
+        <div class="steps">
+          <h3>The pipeline CAFE runs</h3>
+          <ol>
+            <li>Dimensionality reduction on high-dimensional panels</li>
+            <li>Clustering into named cell populations</li>
+            <li>Differential abundance testing across conditions</li>
+            <li>Visualization and figures out the far end</li>
+          </ol>
+          <p class="steps__cite">
+            Siam MHB, Ali MA, Vardaman D III, Acharyya S, Patil M, Tyrrell DJ.
+            <i>Bioinformatics</i>, 2025. doi:10.1093/bioinformatics/btaf176
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plate" id="publications" aria-labelledby="pubs-title">
+    <div class="wrap">
+      <header class="plate__head">
+        <span class="plate__num"><b>Plate VI</b> Publications</span>
+        <h2 class="plate__title" id="pubs-title">Selected publications.</h2>
+        <p class="plate__intro">
+          Twenty publications across immunology, bioinformatics, microbiology and
+          epidemiology; ten of them as first author. The full record lives on
+          <a href="https://scholar.google.com/citations?user=SAG0BIoAAAAJ&amp;hl=en">Google Scholar</a>.
+        </p>
+      </header>
+
+      <ol class="refs">
+        <li class="ref">
+          <span class="ref__year">2025</span>
+          <div>
+            <h3 class="ref__title"><a href="https://doi.org/10.1093/bioinformatics/btaf176">CAFE: an integrated web app for high-dimensional analysis and visualization in spectral flow cytometry</a></h3>
+            <p class="ref__meta"><b>Siam MHB</b>, Ali MA, Vardaman D III, Acharyya S, Patil M, Tyrrell DJ <i>&middot; Bioinformatics 41(6)</i><span class="ref__lead">First author</span></p>
+          </div>
+          <span class="ref__side">Bioinformatics, software</span>
+        </li>
+        <li class="ref">
+          <span class="ref__year">2024</span>
+          <div>
+            <h3 class="ref__title"><a href="https://doi.org/10.4049/jimmunol.2400370">Development of a spectral flow cytometry analysis pipeline for high-dimensional immune cell characterization</a></h3>
+            <p class="ref__meta">Vardaman D III, Ali MA, <b>Siam MHB</b>, Bolding C, Tidwell H, Stephens HR, et al. <i>&middot; The Journal of Immunology 213(11)</i></p>
+          </div>
+          <span class="ref__side">Methods</span>
+        </li>
+        <li class="ref ref--dup">
+          <span class="ref__year"><span class="visually-hidden">2024</span></span>
+          <div>
+            <h3 class="ref__title">In silico identification of quorum sensing inhibitors against LasR protein in a clinical isolate of multidrug resistant <i>Pseudomonas aeruginosa</i> DMC-27b</h3>
+            <p class="ref__meta"><b>Siam MHB</b>, Sirajee AS, Limon MBH, Hossain MA, Sultana M <i>&middot; F1000Research 13:62</i><span class="ref__lead">First author</span></p>
+          </div>
+          <span class="ref__side">Microbiology</span>
+        </li>
+        <li class="ref ref--dup">
+          <span class="ref__year"><span class="visually-hidden">2024</span></span>
+          <div>
+            <h3 class="ref__title">A whole-genome metagenomic approach to explore the gut microbiome of inflammatory bowel disease patients in Bangladesh</h3>
+            <p class="ref__meta"><b>Siam MHB</b>, Mondol SM, Shakil MSK, Islam MR, Islam I, Saha O, et al. <i>&middot; Microbiology Resource Announcements 14(1)</i><span class="ref__lead">First author</span></p>
+          </div>
+          <span class="ref__side">Metagenomics</span>
+        </li>
+        <li class="ref">
+          <span class="ref__year">2022</span>
+          <div>
+            <h3 class="ref__title"><a href="https://doi.org/10.1136/bmjpo-2022-001541">Accidental poisoning in children: a single centre case series study in Bangladesh</a></h3>
+            <p class="ref__meta">Ahmed A, <b>Siam MHB</b>, Shojon M, Hasan MM, Raheem E, Hossain MS <i>&middot; BMJ Paediatrics Open 6(1)</i></p>
+          </div>
+          <span class="ref__side">Public health</span>
+        </li>
+        <li class="ref">
+          <span class="ref__year">2021</span>
+          <div>
+            <h3 class="ref__title">Insights into the first seven months of the COVID-19 pandemic in Bangladesh: lessons learned from a high-risk country</h3>
+            <p class="ref__meta"><b>Siam MHB</b>, Hasan MM, Tashrif SM, Khan MHR, Raheem E, Hossain MS <i>&middot; Heliyon 7(6)</i><span class="ref__lead">First author</span></p>
+          </div>
+          <span class="ref__side">Public health</span>
+        </li>
+        <li class="ref ref--dup">
+          <span class="ref__year"><span class="visually-hidden">2021</span></span>
+          <div>
+            <h3 class="ref__title">In silico insights into potential gut microbial modulation of NAD+ metabolism and longevity</h3>
+            <p class="ref__meta">Salekeen R, <b>Siam MHB</b>, Sharif DI, Lustgarten MS, Billah MM, Islam KMD <i>&middot; Journal of Biochemical and Molecular Toxicology</i></p>
+          </div>
+          <span class="ref__side">Aging biology</span>
+        </li>
+        <li class="ref">
+          <span class="ref__year">2020</span>
+          <div>
+            <h3 class="ref__title">Stopping the COVID-19 pandemic: a review on the advances of diagnosis, treatment, and control measures</h3>
+            <p class="ref__meta"><b>Siam MHB</b>, Nishat NH, Ahmed A, Hossain MS <i>&middot; Journal of Pathogens 2020</i><span class="ref__lead">First author</span></p>
+          </div>
+          <span class="ref__side">Review</span>
+        </li>
+        <li class="ref">
+          <span class="ref__year">2019</span>
+          <div>
+            <h3 class="ref__title"><a href="https://doi.org/10.4269/ajtmh.19-0122">Manifestations of atypical symptoms of chikungunya during the Dhaka outbreak (2017) in Bangladesh</a></h3>
+            <p class="ref__meta">Deeba IM, Hasan MM, Al Mosabbir M, <b>Siam MHB</b>, Islam MS, et al. <i>&middot; The American Journal of Tropical Medicine and Hygiene 100(6)</i></p>
+          </div>
+          <span class="ref__side">Field epidemiology</span>
+        </li>
+      </ol>
+
+      <p class="refs__more">
+        <a href="https://scholar.google.com/citations?user=SAG0BIoAAAAJ&amp;hl=en">Browse the complete record on Google Scholar</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="plate" id="record" aria-labelledby="record-title">
+    <div class="wrap">
+      <header class="plate__head">
+        <span class="plate__num"><b>Plate VII</b> Record</span>
+        <h2 class="plate__title" id="record-title">The path so far.</h2>
+      </header>
+
+      <div class="grid record">
+        <ol class="posts">
+          <li class="post">
+            <span class="post__when">2023 &ndash; Present</span>
+            <div>
+              <h3>Graduate Research Assistant</h3>
+              <p class="post__where">Department of Pathology, UAB Heersink School of Medicine &middot; Advisor: Daniel J. Tyrrell, PhD</p>
+              <ul>
+                <li>Bioinformatics pipelines for immune cell analysis by spectral flow cytometry.</li>
+                <li>CD8+ T cells, aging and cardiovascular disease, using single-cell RNA-seq.</li>
+                <li>Lead developer and first author of CAFE.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__when">2022</span>
+            <div>
+              <h3>Lecturer in Microbiology</h3>
+              <p class="post__where">BRAC University, Dhaka, Bangladesh</p>
+              <ul>
+                <li>Taught introductory microbiology to first-year students.</li>
+                <li>Ran laboratory courses for second- and third-year students.</li>
+                <li>Contributed to the improvement of the undergraduate syllabus.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__when">2022</span>
+            <div>
+              <h3>Research Trainee</h3>
+              <p class="post__where">Genomics Laboratory, icddr,b, Dhaka</p>
+              <ul>
+                <li>Investigated factors associated with miscarriage through metagenomics.</li>
+                <li>Contributed to a pipeline for analyzing nanopore-based metagenomic sequences.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__when">2018</span>
+            <div>
+              <h3>Research Assistant</h3>
+              <p class="post__where">Biomedical Research Foundation, Dhaka, Bangladesh</p>
+              <ul>
+                <li>Published primary and secondary source research on epidemiology and public health.</li>
+                <li>Performed field-level data collection during the chikungunya outbreak in Dhaka.</li>
+                <li>Completed a six-month patient follow-up study with REDCap data management.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <div class="side side--edu">
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <span class="side__when">2023 &ndash;</span>
+              <div>
+                <p class="side__what">PhD, Biomedical Science</p>
+                <p class="side__where">University of Alabama at Birmingham</p>
+                <p class="side__note">Concentration in immunology, bioinformatics and atherosclerosis.</p>
+              </div>
+            </li>
+            <li>
+              <span class="side__when">2021</span>
+              <div>
+                <p class="side__what">MS, Microbiology</p>
+                <p class="side__where">University of Dhaka, Bangladesh</p>
+                <p class="side__note">Thesis: metagenomic analysis of the gut microbiome of IBD patients.</p>
+              </div>
+            </li>
+            <li>
+              <span class="side__when">2018</span>
+              <div>
+                <p class="side__what">BS, Microbiology</p>
+                <p class="side__where">University of Dhaka, Bangladesh</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side side--hon">
+          <h3>Honors and affiliations</h3>
+          <ul>
+            <li>
+              <span class="side__when">2026</span>
+              <div>
+                <p class="side__what">American Heart Association Predoctoral Fellowship</p>
+                <p class="side__where">UAB Department of Pathology</p>
+              </div>
+            </li>
+            <li>
+              <span class="side__when">2024</span>
+              <div>
+                <p class="side__what">Member, UAB Immunology Institute</p>
+                <p class="side__where">An interdisciplinary hub for immunology and human health</p>
+              </div>
+            </li>
+            <li>
+              <span class="side__when">2023</span>
+              <div>
+                <p class="side__what">AMC21 Scholar (STAR21)</p>
+                <p class="side__where">UAB Heersink School of Medicine</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plate contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <header class="plate__head">
+        <span class="plate__num"><b>Plate VIII</b> Contact</span>
+        <h2 class="plate__title" id="contact-title">Say hello.</h2>
+        <p class="plate__intro">
+          I am glad to hear from people working on immune aging, cardiovascular disease or
+          high-dimensional cytometry, and from anyone using CAFE.
+        </p>
+      </header>
+      <a class="contact__mail" href="mailto:msiam@uab.edu">msiam@uab.edu</a>
+      <ul class="contact__links">
+        <li><a href="https://scholar.google.com/citations?user=SAG0BIoAAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><a href="https://github.com/mhbsiam">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/hasanulbannasiam/">LinkedIn</a></li>
+        <li><a href="https://tyrrelllab.github.io/">Tyrrell Lab</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>&copy; <span id="year">2026</span> Md Hasanul Banna Siam</p>
+    <p>Birmingham, Alabama &middot; <a href="mailto:msiam@uab.edu">msiam@uab.edu</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/umap.js" defer></script>
+</body>
+</html>
